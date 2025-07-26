@@ -9,17 +9,49 @@
   <title>MyWebSite</title>
   <style >
     img {margin-bottom: 0; align-self: center; border: 2px, green;}
-    h1 {background: blue; color: beige; margin-top: 0; border-top: 0px;}
+    #horizontal {padding-left: 100px; display: block;}
+    #horizontal {background-color: red; border-style: groove;}
+    #vertical {float: left; padding: 0px 30px 30px 30px; border: 2px rgb(240, 179, 179);}
+    #vertical {background-color: aqua; border-style: double;}
+    section {background-color: aquamarine;}
   </style>
 </head>
 
 <body>
-   <img src="header-banner.png"> <!-- width="1000" height="72" alt="Banner"> -->
-    <hgroup>
-      <h1>HTML</h1>
-      <h2>Building my website</h2>
-      <p>My HTML, CSS, Javascript journey</p>
-    </hgroup>
+  <header> 
+  <img src="header-banner.png"> <!-- width="1000" height="72" alt="Banner"> -->
+   
+   <h1>Web Dev Journey</h1>
+
+   <nav id="horizontal">
+    <h2>Site links</h2>
+      <p>
+        <a href="#html">Markup</a>
+        <a href="#css">Style Sheets</a>
+        <a href="#js">Scripting</a>
+      </p>
+  </header>
+
+    <nav id="vertical">
+      <h2>Page Links</h2>
+
+      <br>
+      HTML
+      <ul>
+        <li><a href="title.html">Titles</a></li>
+      </ul>
+
+    </nav>
+
+   <section>
+    <h2>Web Dev Journey</h2>
+      <p>My HTML, CSS, Javascript journey using HTML, CSS, Javascript in easystep</p>
+      <p>Little project while recovering from hip replacement surgery</p>
+   </section>
+
+
+      
+    
 
 
 </body>
