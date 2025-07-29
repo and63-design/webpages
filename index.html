@@ -8,18 +8,41 @@
   <link rel="shortcut icon" href="favicon.ico">
   <title>MyWebSite</title>
   <style >
-    img {margin-bottom: 0;}
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    
     #horizontal {padding-left: 100px; display: block;}
     #horizontal {border-style: double;}
     #vertical {float: left; padding: 0px 30px 30px 30px;}
     #vertical {border-style: double; display: block;}
     #sect {padding-left: 200px;}
+
+    div.flex-cont{
+      display: flex;
+      justify-content: space-around;
+      height: 70px;
+      align-items: center;
+      background-color: blue;
+    }
+
+    div.flex-cont > div {
+      background-color: aqua;
+      font-style: italic;
+    }
+
+
   </style>
 </head>
 
 <body>
+
   <header> 
-  <img src="header-banner.png"> <!-- width="1000" height="72" alt="Banner"> -->
+    <div class="flex-cont">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+    </div>
+  <!-- <img src="header-banner.png"> <!-- width="1000" height="72" alt="Banner"> 
    
    <h1>Web Dev Journey</h1>
 
@@ -29,7 +52,7 @@
         <a href="#html">Markup</a>
         <a href="#css">Style Sheets</a>
         <a href="#js">Scripting</a>
-      </p>
+      </p> -->
   </header>
 
     <nav id="vertical">
