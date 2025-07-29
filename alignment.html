@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Items</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    div.flex-container{
+      display: flex;
+      flex-flow: row wrap;
+      border: 2px dashed royalblue;
+      height: 200px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div.flex-container > div{
+      padding: 10px 40px;
+      background-color: blueviolet;
+      border: 2px royalblue;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div.flex-container > div:nth-child(2) {align-self: flex-end;}
+    div.flex-container > div:nth-child(3) {align-self: flex-start;}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Align Items</h1>
+  </header>
+  
+  <div class="flex-container">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </div>
+</body>
+</html>
