@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Styling</title>
+
+  <style>
+
+    table {width: 500px; border-collapse: collapse;}
+    tbody th {background: deeppink; color: white;}
+    tbody td {padding: 3px; text-align: center;}
+    tfoot {font-size: small;}
+
+    colgroup.sidebar col {width: 70px;}
+    colgroup.info col {width: 80px}
+
+    colgroup.info {border-left: 2px solid white}
+    colgroup.stripe {background: Pink;}
+
+  </style>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <h1>Control Columns</h1>
+
+  <table>
+    <caption>Breakfast Flights</caption>
+    <colgroup class="sidebar"><col></colgroup>
+
+    <colgroup class="info">
+    <col class="stripe"> <col> <col class="stripe">
+    </colgroup>
+
+    <colgroup class="info">
+      <col><col class="stripe">
+    </colgroup>
+
+    <thead><tr><th colspan="6">New York (JFK) - Los Angeles (LAX)</thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>American Air Lines</td>
+          <td>Delta Air Lines</td>
+          <td>Alaska Air Lines</td>
+          <td>United</td>
+          <td>Continental</td></tr>
+        <tr>
+          <td>Departure</td>
+          <td>08:30</td>
+          <td>07:00</td>
+          <td>07:30</td>
+          <td>07:55</td>
+          <td>08:35</td>
+        </tr>
+        <tr>
+          <td>Arrival</td>
+          <td>12:05</td>
+          <td>10:30</td>
+          <td>10:45</td>
+          <td>11:30</td>
+          <td>12:00</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>6h35min</td>
+          <td>6h30min</td>
+          <td>6h15m</td>
+          <td>6h35min</td>
+          <td>6h25min</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>$179</td>
+          <td>$195</td>
+          <td>$235</td>
+          <td>$225</td>
+          <td>$189</td>
+        </tr>
+      </tbody>
+
+    <tfoot><tr><td colspan="6">&bull; Flights Non-Stop &bull; Times are Local &bull; Tickets are 1-Way &bull; Prices Include Tax
+  </table>
+  <br>
+  <hr>
+  <br>
+
+  <a href="index.html">Home</a>
+</body>
+</html>
