@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative</title>
+
+  <style>
+    /*
+    div p {color: white; background: blue;}
+     h3 + div {background: yellow;} 
+    */
+
+    div >p {color: white; background: blue;}
+    h3 ~ div {background: yellow;}
+  </style>
+</head>
+<body>
+  <h3>Heading</h3>
+  <div>
+    Content
+  </div>
+  <div>
+    More Content
+  </div>
+    
+  <div>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+  </div>
+  
+  <br>
+  <hr>
+  <br>
+
+  <a href="http://127.0.0.1:5500/index.html">Home</a>
+</body>
+</html>
