@@ -8,12 +8,16 @@
   <link rel="shortcut icon" href="favicon.ico">
   <title>MyWebSite</title>
   <style >
+    body {background-color: lightgray; color: darkblue;}
+    a {color: darkblue;}
     img {margin-bottom: 0;}
     #horizontal {padding-left: 100px; display: block;}
     #horizontal {border-style: double;}
     #vertical {float: left; padding: 0px 30px 30px 30px;}
     #vertical {border-style: double; display: block;}
     #sect {padding-left: 200px;}
+    div.flex-container {display: flex; justify-content: space-between;}
+    div.flex-container > div {padding: 10px;}
   </style>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -27,11 +31,13 @@
 
    <nav id="horizontal">
     <h2>Site links</h2>
+    <div class="flex-container">
       <p>
-        <a href="#html">Markup</a>
-        <a href="#css">Style Sheets</a>
-        <a href="#js">Scripting</a>
+        <div><a href="#html">Markup</a></div>
+        <div><a href="#css">Style Sheets</a></div>
+        <div><a href="#js">Scripting</a></div>
       </p>
+    </div>
   </header>
 
     <nav id="vertical">
@@ -51,6 +57,7 @@
         <li><a href="image.html">Add Images</a></li>
         <li><a href="map.html">Image Maps</a></li>
         <li><a href="picture.html">Pictures</a></li>
+        <li><a href="object.html">Embedded Objects</a></li>
       </ul>
       <p>
         <h4>CSS</h4>
