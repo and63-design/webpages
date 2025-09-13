@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute</title>
+
+    <style>
+      ol[id] {border: 2px solid red;}
+      li[class = "reptile"] {background: Red;}
+      li[class ~= "animal"] {background: blue;}
+      li[class |= "cat"] {background: green;}
+      li[class *= "fi"] {background: yellow;}
+      li[class ^= "top"] {background: orange;}
+      li[class $= "ird"] {background: purple;}
+    </style>
+  </head>
+  <body>
+    <ol id="list">
+      <li class="reptile">Aligator</li>
+      <li class="domestic animal">Dog</li>
+      <li class="animal wild">Tiger</li>
+      <li class="cat-family">Lion</li>
+      <li class="sea fish">Barracuda</li>
+      <li class="topcat">Cartoon</li>
+      <li class="domestic bird">Budgerigar</li>
+    </ol>
+  </body>
+</html>

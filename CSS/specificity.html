@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity</title>
+
+ <style>
+    h2 {color: yellow;}
+  
+    h2 {background: Red;}
+    body h2 {background: blue;}
+
+    #header {background: green;}
+    h2#header {background: red;}
+
+    h2.head {background: red;}
+    body h2.head {background: green;}
+  </style>
+
+
+</head>
+<body>
+
+  <h2 style="color: white;">Element Style</h2>
+
+  <h2 id="header">Identity Style</h2>
+
+  <h2 class="head">Class Style</h2>
+  
+</body>
+</html>
