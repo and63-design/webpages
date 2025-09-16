@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo</title>
+  <style>
+    h1::first-letter { color: forestgreen;}
+    h1::selection { background: lawngreen;}
+
+    p::before { content: "***"; background: lightgreen;}
+    p::after { content: "!!!"; background: lawngreen;}
+
+    a[href].quote::before { content: open-quote; color: blue;}
+    a[href].quote::after { content: close-quote; color: blue;}
+
+    a[href].pdf::after { content: url(pdf-ico.png);}
+
+    a[href].att::after { content: "(" attr(href)")"; color: blue;}
+  </style>
+</head>
+<body>
+  <h1>Pseudo Element</h1>
+
+  <p>Get more <a href="info.pdf">info</a> here</p>
+  <p>Get more <a href="info.pdf" class="quote">info</a> here</p>
+  <p>Get more <a href="info.pdf" class="pdf">info</a> here</p>
+  <p>Get more <a href="info.pdf" class="att">info</a> here</p>
+  
+</body>
+</html>
