@@ -1,0 +1,17 @@
+caption { display: table-caption;}
+
+league { display: table;}
+
+headers { display: table-header-group;}
+
+rows { display: table-row-group;}
+
+team { display: table-row;}
+
+name, pos, pts, lbl { display: table-cell;}
+
+league { margin: auto; margin-top: 20px; width: 300px; border-spacing: 3px; border: 8px ridge green;}
+
+headers { background: yellowgreen; color: white;}
+
+rows { background: lightgreen;}

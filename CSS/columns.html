@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Columns</title>
+  <style>
+    table { width: 500px; border: 2px dashed darkorchid; caption-side: top; text-align: center; margin: 0 0 30px;}
+
+    td { border: 2px solid darkorchid;}
+    caption {background: orchid;}
+    table.fixed { table-layout: fixed;}
+
+  </style>
+</head>
+<body>
+  <table><caption>Auto Layout</caption>
+    <tr><td>Text Content</td><td>This is text conten wider than 130px</td> <td>Text Content</td></tr>
+  </table>
+  <table class="fixed"><caption>Fixed Layout</caption>
+    <tr><td>Text Content</td><td>This is text conten wider than 130px</td> <td>Text Content</td></tr>
+  </table>
+</body>
+</html>
