@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus</title>
+  <style>
+    input:focus { background-color: darkorange;}
+    a:focus { background: orange;}
+
+  </style>
+</head>
+<body>
+  <form action="echo.py">
+    <fieldset>
+      <legend>Send for details</legend>
+      <label for="addr">Enter your email address:</label>
+      <input id="addr" type="text"> <br>
+      <input type="submit" value="send">
+      <a href="http://samples">Samples Page</a>
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rollover</title>
+  <style>
+    div { position: absolute; top: 10px; width: 150px; height: 50px;}
+
+    div#active { left: 10px;}
+    div#prints { left: 170px;}
+
+    div#active { background: bisque;}
+    div#prints { background: url(prints.png) 0 0 bisque;}
+
+    div#active:hover { background-color: darkorange;}
+    div#prints:hover { background: url(prints.png) 0 -50px darkorange;}
+  </style>
+</head>
+<body>
+  <div id="active"></div>
+  <div id="prints"></div>
+
+</body>
+</html>
