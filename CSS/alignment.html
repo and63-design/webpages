@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Alignment</title>
+
+   <style>
+    * {
+      margin: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    div.flex-container > div {
+      padding: 10px 40px;
+      background: lightsteelblue;
+      border: 2px solid royalblue;
+      font: 1.25em sans-serif;
+    }
+
+    div.flex-container  {
+      display: flex;
+      flex-flow: row wrap;
+      height: 200px;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px dashed royalblue;
+    }
+
+    div.flex-container > div:nth-child(2) {
+      align-self: flex-end;
+    }
+
+    div.flex-container > div:nth-child(3) {
+      align-self: flex-start;
+    }
+
+  </style>
+</head>
+<body>
+   <Div class="flex-container"> 
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </Div>
+</body>
+</html>

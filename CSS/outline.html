@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box;}
+
+    div { 
+      width: 420px;
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid black;
+      background: lightsteelblue;
+      font: 1.24em sans-serif;
+    }
+
+    div.outline {
+      outline: 10px solid royalblue;
+      outline-offset: 5px;
+    }
+
+    div.resize {
+      resize: both;
+      overflow: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outline resize">
+    This division has a blue outline and can be resized
+    by dragging it bottom-right corner
+  </div>
+</body>
+</html>
