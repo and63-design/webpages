@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Built-in Objects</title>
+
+  <style>
+    * {
+      margin: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font: 1.25em;
+      background: tomato;
+      color: azure;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Built-in Objects</h1>
+
+  <script>
+    (function () {
+      let jsString = 'Text'
+      let JsNumber = 125000
+      let jsBoolean = true
+
+      let jsObject = {
+        firstName: 'Mike', lastName: 'Mcgrath'
+      }
+      let jsDate = new Date()
+      let jsArray = [ 1,2,3]
+      let jsRegExp = /ineasysteps/
+      let jsMath = Math
+      let jsError = new Error('Error')
+
+      console.log('Date Object: ' + jsDate)
+      console.log('Locale Date String: ' + jsDate.toLocaleString())
+      console.log('\nPrimitive Number: ' + JsNumber)
+      console.log('Local Number String: ' + JsNumber.toLocaleString())
+    })()
+
+  </script>
+</body>
+</html>
