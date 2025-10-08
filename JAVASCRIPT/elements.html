@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop Elements</title>
+  <style>
+    * {
+      border: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: blue;
+      background: white;
+      text-align: center;
+      text-decoration: double;
+      font: 1.25em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Loop Elements</h1>
+
+  <script>
+    (function () {
+      let i, result, boolArray = []
+
+      console.log('Fill Elements')
+
+      for(i=1; i<11; i++)
+      {
+        boolArray[i] = (i % 2 === 0) ? true : false
+        console.log('Element' + i + ':' + boolArray[i])
+      } 
+
+      console.log('Read Elements...')
+      result = ''
+
+      for ( i = 1; i < boolArray.length; i++)
+      {
+        if(boolArray[i]) { result +=i + '|'}        
+      }
+      console.log('True in Elements: ' + result)
+
+      result = ''
+
+      for ( i = 1; i < boolArray.length; i++)
+      {
+        if(!boolArray[i]) { result +=i + '|'}
+      }
+      console.log('False in Elements: ' + result)
+
+    })()
+  </script>
+  
+</body>
+</html>
